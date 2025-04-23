@@ -6,11 +6,8 @@ pygame.init()
 width, height = 800, 800
 rows, cols = 100, 100
 cell_size = width // cols
-
 screen = pygame.display.set_mode((width, height))
-
 clock = pygame.time.Clock()
-
 grid = numpy.random.choice([0, 1], size=(rows, cols), p=[0.8, 0.2])
 
 def update(grid):
